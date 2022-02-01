@@ -16,14 +16,14 @@ git pull origin master
 ~~~
 ## 项目分类
 
-### 给新人的科普
+#### 给新人的科普
 
--[SurviveSJTUManual](https://github.com/SurviveSJTU/SurviveSJTUManual)
+- [SurviveSJTUManual](https://github.com/SurviveSJTU/SurviveSJTUManual)
 
--[AdviceForXJTUer](https://mp.weixin.qq.com/s?__biz=MzkzMzEyMzA1Mg==&mid=2247483658&idx=1&sn=fec3ee8ec0eddf042fecb5775f425adc&chksm=c2500789f5278e9fe2246e7819e3b3f8103814fa931cccce23eddd7287c1ee3b805b5663572d&token=107173318&lang=zh_CN#rd)
+- [AdviceForXJTUer](https://mp.weixin.qq.com/s?__biz=MzkzMzEyMzA1Mg==&mid=2247483658&idx=1&sn=fec3ee8ec0eddf042fecb5775f425adc&chksm=c2500789f5278e9fe2246e7819e3b3f8103814fa931cccce23eddd7287c1ee3b805b5663572d&token=107173318&lang=zh_CN#rd)
 
-### 专业自救指南
+#### 专业自救指南
 - [物理自救指南](https://www.zhihu.com/question/398899721/answer/2240399721?utm_source=wechat_session&utm_medium=social&utm_oi=1057242216107417600&utm_content=group1_myAnswer&utm_campaign=shareopn)
 
-### 实验资料
-- [实验资料由16级的学长整理](https://github.com/cantjie/XJTU-Share)
+#### 实验资料
+- [实验资料](https://github.com/cantjie/XJTU-Share)
