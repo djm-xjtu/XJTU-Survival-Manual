@@ -23,7 +23,7 @@ git pull origin master
 - [AdviceForXJTUer](https://mp.weixin.qq.com/s/jorH0Ci1wC4BW4GDzqU7iA)
 
 #### 专业自救指南
-- [物理自救指南](https://www.zhihu.com/question/398899721/answer/2240399721?utm_source=wechat_session&utm_medium=social&utm_oi=1057242216107417600&utm_content=group1_myAnswer&utm_campaign=shareopn)
+- [物理自救指南](https://mp.weixin.qq.com/s/ZwGobkkzgtsEM4vbvQS9Fw)
 
 #### 实验资料
 - [实验资料](https://github.com/cantjie/XJTU-Share)
