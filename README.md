@@ -34,3 +34,6 @@ git pull origin master
 
 #### springboot项目
 - [mall](https://github.com/macrozheng/mall)
+
+#### 算法指南
+- [algorithm](https://github.com/djm-xjtu/PersonalTemplates)
