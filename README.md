@@ -32,8 +32,3 @@ git pull origin master
 - [面经常考解答](https://github.com/djm-xjtu/java-interview)
 - [完整面经](https://github.com/CyC2018/CS-Notes)
 
-#### springboot项目
-- [mall](https://github.com/macrozheng/mall)
-
-#### 算法指南
-- [algorithm](https://github.com/djm-xjtu/PersonalTemplates)
