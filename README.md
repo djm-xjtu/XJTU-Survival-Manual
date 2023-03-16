@@ -12,7 +12,7 @@ git clone https://github.com/djm-xjtu/XJTUer_Helpyourself.git
 ~~~
 - 获取更新
 ~~~
-git pull origin master
+git pull
 ~~~
 ## 项目分类
 
@@ -31,4 +31,5 @@ git pull origin master
 #### 面经
 - [面经常考解答](https://github.com/djm-xjtu/java-interview)
 - [完整面经](https://github.com/CyC2018/CS-Notes)
+- [润](https://github.com/djm-xjtu/run/)
 
