@@ -18,9 +18,9 @@ git pull
 
 #### 给新人的科普
 
-- [SurviveSJTUManual](https://github.com/SurviveSJTU/SurviveSJTUManual)
+- [AdviceForXJTUer](https://github.com/djm-xjtu/XJTUer_Helpyourself/blob/main/articles/general_advice_for_XJTUers.md)
 
-- [AdviceForXJTUer](https://mp.weixin.qq.com/s/jorH0Ci1wC4BW4GDzqU7iA)
+- [SurviveSJTUManual](https://github.com/SurviveSJTU/SurviveSJTUManual)
 
 #### 专业自救指南
 - [物理自救指南](https://mp.weixin.qq.com/s/ZwGobkkzgtsEM4vbvQS9Fw)
