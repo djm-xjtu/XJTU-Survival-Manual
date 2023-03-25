@@ -23,7 +23,7 @@ git pull
 - [SurviveSJTUManual](https://github.com/SurviveSJTU/SurviveSJTUManual)
 
 #### 专业自救指南
-- [物理自救指南](https://mp.weixin.qq.com/s/ZwGobkkzgtsEM4vbvQS9Fw)
+- [物理自救指南](https://github.com/djm-xjtu/XJTUer_Helpyourself/blob/main/articles/xjtu_physical_advice.md)
 
 #### 实验资料
 - [实验资料](https://github.com/cantjie/XJTU-Share)
