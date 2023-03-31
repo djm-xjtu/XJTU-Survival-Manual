@@ -18,12 +18,12 @@ git pull
 
 #### 给新人的科普
 
-- [AdviceForXJTUer](https://djm-xjtu.github.io/articles/general_advice_for_XJTUers.md)
+- [AdviceForXJTUer](https://djm-xjtu.github.io/XJTUer_Helpyourself/articles/general_advice_for_XJTUers.md)
 
 - [SurviveSJTUManual](https://github.com/SurviveSJTU/SurviveSJTUManual)
 
 #### 专业自救指南
-- [物理自救指南](https://djm-xjtu.github.io/articles/xjtu_physical_advice.md)
+- [物理自救指南](https://djm-xjtu.github.io/XJTUer_Helpyourself/articles/xjtu_physical_advice.md)
 
 #### 实验资料
 - [实验资料](https://github.com/cantjie/XJTU-Share)
