@@ -18,12 +18,12 @@ git pull
 
 #### 给新人的科普
 
-- [AdviceForXJTUer](https://github.com/djm-xjtu/XJTUer_Helpyourself/blob/main/articles/general_advice_for_XJTUers.md)
+- [AdviceForXJTUer](https://djm-xjtu.github.io/articles/general_advice_for_XJTUers.md)
 
 - [SurviveSJTUManual](https://github.com/SurviveSJTU/SurviveSJTUManual)
 
 #### 专业自救指南
-- [物理自救指南](https://github.com/djm-xjtu/XJTUer_Helpyourself/blob/main/articles/xjtu_physical_advice.md)
+- [物理自救指南](https://djm-xjtu.github.io/articles/xjtu_physical_advice.md)
 
 #### 实验资料
 - [实验资料](https://github.com/cantjie/XJTU-Share)
@@ -35,8 +35,4 @@ git pull
 #### 润学
 - [润学思想大纲](https://github.com/djm-xjtu/run/)
 - [国家选择](https://github.com/djm-xjtu/run/tree/main/%E6%B6%A6%E5%AD%A6%E6%96%B9%E6%B3%95%E8%AE%BA/%E5%90%84%E5%9B%BD%E9%80%89%E6%8B%A9)
-
-## Star History
-
-![star-history-2023323](https://user-images.githubusercontent.com/72679543/227341608-4f659bd5-14ec-48f8-bc1f-0ee210736d2d.png)
 
