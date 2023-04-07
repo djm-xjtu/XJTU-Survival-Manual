@@ -7,18 +7,13 @@
 ## 项目分类
 
 #### 给新人的科普
-* [AdviceForXJTUer](./articles/general_advice_for_XJTUers.md)
-* [SurviveSJTUManual](https://github.com/SurviveSJTU/SurviveSJTUManual)
+* [入学基础须知](./articles/1.md)
 
 #### 专业自救指南
 * [物理自救指南](./articles/xjtu_physical_advice.md)
 
 #### 实验资料
 * [实验资料](https://github.com/cantjie/XJTU-Share)
-
-#### 面经
-* [面经常考解答](https://github.com/djm-xjtu/java-interview)
-* [完整面经](https://github.com/CyC2018/CS-Notes)
 
 #### 润学
 * [润学思想大纲](https://github.com/djm-xjtu/run/)
