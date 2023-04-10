@@ -9,6 +9,7 @@
 #### 给新人的科普
 * [入学基础须知](./articles/1.md)
 * [分流/转专业篇](./articles/2.md)
+* [社团篇](./articles/3.md)
 
 #### 专业自救指南
 * [物理自救指南](./articles/xjtu_physical_advice.md)
