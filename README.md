@@ -11,6 +11,7 @@
 * [分流/转专业篇](./articles/2.md)
 * [社团篇](./articles/3.md)
 * [绩点/均分篇](./articles/4.md)
+* [竞赛/科研篇](./articles/5.md)
 
 #### 专业自救指南
 * [物理自救指南](./articles/xjtu_physical_advice.md)
