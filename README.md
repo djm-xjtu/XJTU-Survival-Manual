@@ -14,7 +14,7 @@
 * [竞赛/科研篇](./articles/5.md)
 * [佛系/奋斗篇](./articles/6.md)
 * [社交/恋爱篇](./articles/7.md)
-* [番外篇](./articles/8.md) 
+* [番外篇](./articles/8.md)
 * [润学篇](./articles/9.md)
 
 #### 专业自救指南
