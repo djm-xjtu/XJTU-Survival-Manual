@@ -24,6 +24,6 @@
 * [实验资料](https://github.com/cantjie/XJTU-Share)
 
 #### 润学
-* [润学思想大纲](https://github.com/djm-xjtu/run/)
+* [润学思想大纲](https://github.com/djm-xjtu/run/) 
 * [国家选择](https://github.com/djm-xjtu/run/tree/main/%E6%B6%A6%E5%AD%A6%E6%96%B9%E6%B3%95%E8%AE%BA/%E5%90%84%E5%9B%BD%E9%80%89%E6%8B%A9)
 
