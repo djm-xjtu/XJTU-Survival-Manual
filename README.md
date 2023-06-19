@@ -18,6 +18,8 @@
 * [番外篇](./articles/8.md)
 * [润学篇](./articles/9.md)
 
+#### 2023 update
+
 #### 专业自救指南
 * [物理自救指南](./articles/xjtu_physical_advice.md)
 
