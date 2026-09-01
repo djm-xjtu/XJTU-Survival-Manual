@@ -1,2 +1,53 @@
-theme: jekyll-theme-cayman
+title: 西安交大生存指南
+tagline: XJTU Survival Manual
+description: 一份写给西安交通大学在读学生的全面生存指南——入学须知、专业分流、绩点均分、竞赛科研、社交恋爱、润学规划，帮你少走弯路。
+author: djm-xjtu
+lang: zh-CN
 
+url: https://djm-xjtu.github.io
+baseurl: /XJTU-Survival-Manual
+
+repository: djm-xjtu/XJTU-Survival-Manual
+github_repo_url: https://github.com/djm-xjtu/XJTU-Survival-Manual
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  auto_ids: true
+
+sass:
+  style: compressed
+
+# 站点导航中额外的外部资源
+resources:
+  - name: 实验资料 XJTU-Share
+    url: https://github.com/cantjie/XJTU-Share
+    desc: 交大各科实验报告、课程资料共享仓库
+    icon: 🧪
+  - name: 润学思想大纲
+    url: https://github.com/djm-xjtu/run/
+    desc: 从为什么润到怎么润的系统性整理
+    icon: 🧭
+  - name: 各国选择
+    url: https://github.com/djm-xjtu/run/tree/main/%E6%B6%A6%E5%AD%A6%E6%96%B9%E6%B3%95%E8%AE%BA/%E5%90%84%E5%9B%BD%E9%80%89%E6%8B%A9
+    desc: 目标国家横向对比与取舍
+    icon: 🌏
+
+defaults:
+  - scope:
+      path: articles
+    values:
+      layout: article
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .github
+  - articles/顺手记录
+
+include:
+  - .nojekyll

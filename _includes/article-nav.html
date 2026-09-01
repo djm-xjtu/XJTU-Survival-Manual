@@ -1,0 +1,28 @@
+{%- assign all_articles = site.pages | where: "article", true | sort: "order" -%}
+{%- assign groups = all_articles | map: "category" | uniq -%}
+<nav class="doc-nav" aria-label="文章目录">
+  {%- for g in groups %}
+  <div class="doc-nav-group">
+    <p class="doc-nav-title">{{ g }}</p>
+    <ul>
+      {%- assign items = all_articles | where: "category", g -%}
+      {%- for item in items %}
+      <li>
+        <a href="{{ item.url | relative_url }}"{% if item.url == page.url %} class="active" aria-current="page"{% endif %}>
+          <span class="dn-icon" aria-hidden="true">{{ item.icon }}</span>
+          <span class="dn-text">{{ item.title }}</span>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+  {%- endfor %}
+  <div class="doc-nav-group">
+    <p class="doc-nav-title">拓展资源</p>
+    <ul>
+      {%- for r in site.resources %}
+      <li><a href="{{ r.url }}" target="_blank" rel="noopener"><span class="dn-icon" aria-hidden="true">{{ r.icon }}</span><span class="dn-text">{{ r.name }}</span><span class="dn-ext" aria-hidden="true">↗</span></a></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</nav>

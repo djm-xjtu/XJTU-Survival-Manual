@@ -1,0 +1,134 @@
+---
+layout: default
+home: true
+body_class: page-home
+---
+{%- assign all_articles = site.pages | where: "article", true | sort: "order" -%}
+{%- assign total = all_articles | size -%}
+{%- assign total_chars = 0 -%}
+{%- for a in all_articles -%}
+  {%- assign c = a.content | strip_html | strip_newlines | size -%}
+  {%- assign total_chars = total_chars | plus: c -%}
+{%- endfor -%}
+{%- assign wan = total_chars | divided_by: 10000 -%}
+{%- assign groups = all_articles | map: "category" | uniq -%}
+
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <span class="grid-lines"></span>
+  </div>
+  <div class="hero-inner">
+    <p class="hero-badge">🎓 写给每一位交大人 · 持续更新</p>
+    <h1 class="hero-title">
+      西安交大<span class="grad">生存指南</span>
+    </h1>
+    <p class="hero-sub">
+      从入学须知到专业分流，从绩点竞赛到社交与升学规划。<br>
+      一份把「学长学姐的经验」讲透的手册，帮你少走弯路，把时间花在真正重要的事情上。
+    </p>
+    <div class="hero-actions">
+      <a class="btn primary" href="{{ all_articles[0].url | relative_url }}">
+        开始阅读
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <button class="btn ghost search-trigger">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        搜索全文
+      </button>
+      <a class="btn ghost" href="{{ site.github_repo_url }}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" width="17" height="17" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.4 7.4 0 014 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        GitHub
+      </a>
+    </div>
+    <ul class="hero-stats">
+      <li><strong>{{ total }}</strong><span>篇长文</span></li>
+      <li><strong>{{ wan }}万+</strong><span>字经验</span></li>
+      <li><strong>18级</strong><span>学长执笔</span></li>
+      <li><strong>100%</strong><span>免费开源</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="guide">
+  <div class="section-head">
+    <div>
+      <p class="section-kicker">Chapter 01</p>
+      <h2>给新人的科普</h2>
+      <p class="section-desc">刚进校最容易踩的坑、最需要提前知道的规则，按时间线读一遍就够了。</p>
+    </div>
+    <div class="filter-box">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input type="search" id="card-filter" placeholder="筛选文章标题…" autocomplete="off">
+    </div>
+  </div>
+
+  {%- for g in groups %}
+  {%- assign items = all_articles | where: "category", g -%}
+  {%- if forloop.index > 1 %}
+  <div class="section-head sub" id="{% if g contains '自救' %}major{% else %}more{% endif %}">
+    <div>
+      <p class="section-kicker">Chapter 0{{ forloop.index }}</p>
+      <h2>{{ g }}</h2>
+      <p class="section-desc">{% if g contains '自救' %}来自各专业学长的第一视角复盘：值不值得读、怎么读、出路在哪。{% else %}把所有章节合成一篇的完整版，适合一次性通读或本地保存。{% endif %}</p>
+    </div>
+  </div>
+  {%- endif %}
+  <div class="card-grid">
+    {%- for a in items %}
+    {%- assign c = a.content | strip_html | strip_newlines | size -%}
+    {%- assign m = c | divided_by: 420 | plus: 1 -%}
+    <a class="card" href="{{ a.url | relative_url }}" data-title="{{ a.title }} {{ a.summary }} {{ a.tags | join: ' ' }}">
+      <span class="card-index">{{ a.order | prepend: '0' | slice: -2, 2 }}</span>
+      <span class="card-icon" aria-hidden="true">{{ a.icon }}</span>
+      <h3>{{ a.title }}</h3>
+      <p>{{ a.summary }}</p>
+      <div class="card-tags">
+        {%- for t in a.tags %}<span>{{ t }}</span>{% endfor %}
+      </div>
+      <div class="card-foot">
+        <span>约 {{ m }} 分钟</span>
+        <span class="card-go">阅读 →</span>
+      </div>
+    </a>
+    {%- endfor %}
+  </div>
+  {%- endfor %}
+  <p class="empty-tip" id="empty-tip" hidden>没有匹配的文章，换个关键词试试～</p>
+</section>
+
+<section class="section" id="extra">
+  <div class="section-head">
+    <div>
+      <p class="section-kicker">Extra</p>
+      <h2>拓展资源</h2>
+      <p class="section-desc">课程资料、润学方法论等站外优质仓库。</p>
+    </div>
+  </div>
+  <div class="res-grid">
+    {%- for r in site.resources %}
+    <a class="res-card" href="{{ r.url }}" target="_blank" rel="noopener">
+      <span class="res-icon" aria-hidden="true">{{ r.icon }}</span>
+      <div>
+        <h3>{{ r.name }} <span class="ext">↗</span></h3>
+        <p>{{ r.desc }}</p>
+      </div>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="cta-inner">
+    <div>
+      <h2>这份指南由交大人共同维护</h2>
+      <p>发现内容过时、有出入，或者想补充自己专业的经验？欢迎提交 Issue 或 Pull Request，让后来者少走一点弯路。</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn primary" href="{{ site.github_repo_url }}/issues/new" target="_blank" rel="noopener">提交 Issue</a>
+      <a class="btn ghost light" href="{{ site.github_repo_url }}/fork" target="_blank" rel="noopener">Fork & PR</a>
+    </div>
+  </div>
+</section>

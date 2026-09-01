@@ -1,0 +1,16 @@
+---
+layout: null
+---
+{%- assign all_articles = site.pages | where: "article", true | sort: "order" -%}
+[
+{%- for a in all_articles %}
+  {
+    "title": {{ a.title | jsonify }},
+    "category": {{ a.category | jsonify }},
+    "icon": {{ a.icon | jsonify }},
+    "summary": {{ a.summary | jsonify }},
+    "url": {{ a.url | relative_url | jsonify }},
+    "content": {{ a.content | strip_html | replace: '&gt;', '>' | replace: '&lt;', '<' | replace: '&amp;', '&' | replace: '&quot;', '"' | normalize_whitespace | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+]

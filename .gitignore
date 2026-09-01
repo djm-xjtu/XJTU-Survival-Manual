@@ -74,3 +74,10 @@ target
 tsconfig.node.tsbuildinfo
 lib
 affine.db
+
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+vendor/
