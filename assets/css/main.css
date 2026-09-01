@@ -189,11 +189,15 @@ button { font: inherit; cursor: pointer; }
 
 /* ---------- Hero ---------- */
 .hero { position: relative; overflow: hidden; padding: 84px 22px 72px; text-align: center; }
+.hero::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 120px;
+  background: linear-gradient(to bottom, transparent, var(--bg)); pointer-events: none;
+}
 .hero-bg { position: absolute; inset: 0; pointer-events: none; }
 .hero-bg .orb { position: absolute; border-radius: 50%; filter: blur(70px); opacity: .5; animation: float 18s ease-in-out infinite; }
 .orb-1 { width: 460px; height: 460px; background: radial-gradient(circle, #6ea8ff, transparent 70%); top: -160px; left: -80px; }
 .orb-2 { width: 400px; height: 400px; background: radial-gradient(circle, #ffd479, transparent 70%); top: -80px; right: -60px; animation-delay: -6s; }
-.orb-3 { width: 340px; height: 340px; background: radial-gradient(circle, #ff9aa8, transparent 70%); bottom: -230px; left: 46%; opacity: .3; animation-delay: -11s; }
+.orb-3 { width: 420px; height: 420px; background: radial-gradient(circle, #ffb3bf, transparent 72%); bottom: -320px; left: 42%; opacity: .22; animation-delay: -11s; }
 [data-theme="dark"] .hero-bg .orb { opacity: .22; }
 @keyframes float {
   0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
