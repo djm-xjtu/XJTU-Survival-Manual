@@ -31,6 +31,13 @@
 * [社交/恋爱篇](./articles/7.md)
 * [番外篇](./articles/8.md)
 * [润学篇](./articles/9.md)
+* [新生一周行动清单（报到 → 开学）](./articles/freshman-week-checklist.md)
+* [宿舍与生活服务：把日子过顺的 20 个细节](./articles/dorm-and-life-services.md)
+* [选课与考试：把“信息差”变成均分优势](./articles/course-selection-and-exams.md)
+* [奖学金/助学金/勤工助学：普通人也能稳拿的路径](./articles/scholarships-and-financial-aid.md)
+* [科研入门与找导师：从“想进组”到“做出成果”](./articles/research-get-started-and-choose-advisor.md)
+* [实习与求职路线图：从大一开始做的“不焦虑准备”](./articles/internship-and-career-roadmap.md)
+* [信息差工具箱：校内系统、资料源、社群与效率习惯](./articles/infogap-toolkit.md)
 
 #### 专业自救指南
 * [物理自救指南](./articles/xjtu_physical_advice.md)
